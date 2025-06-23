@@ -34,8 +34,8 @@ export default function RootLayout({
               <Icons.Instagram />
             </div>
           </div>
-          <div className="h-[20rem]"></div>
-          <div className="grid grid-cols-2 gap-4  place-items-center px-16 ">
+
+          <div className="absolute top-[45rem] left-0 right-0  grid grid-cols-2 gap-4  place-items-center px-16 ">
             {[...Array(10).keys()].map((index) => (
               <div
                 key={index}
@@ -43,18 +43,34 @@ export default function RootLayout({
               ></div>
             ))}
           </div>
-          <div></div>
-          <div></div>
+          <div className=" absolute top-[90rem]  left-0  h-28 w-19 border-r border-t border-b border-[#ABB2BF]"></div>
+          <div className="absolute bottom-10 left-0   grid grid-cols-3 gap-4  place-items-center ">
+            {[...Array(15).keys()].map((index) => (
+              <div
+                key={index}
+                className="h-1 w-1 bg-[#ABB2BF] rounded-full"
+              ></div>
+            ))}
+          </div>
         </div>
 
         <div className="flex-8 bg-[#282C33] ">
           <TopNav />
           {children}
         </div>
-        <div className="flex-1  bg-[#282C33]  min-h-screen hidden lg:flex flex-col justify-between  items-end">
-          <div></div>
-          <div className="h-28 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
-          <div></div>
+        <div className="flex-1 relative bg-[#282C33]  min-h-screen hidden lg:flex flex-col justify-between  items-end">
+          <div className=" absolute top-[45rem]  right-0  h-28 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
+
+          <div className=" absolute top-[90rem]  right-0  h-46 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
+
+          <div className="absolute bottom-[20rem] right-0   grid grid-cols-3 gap-4  place-items-center ">
+            {[...Array(15).keys()].map((index) => (
+              <div
+                key={index}
+                className="h-1 w-1 bg-[#ABB2BF] rounded-full"
+              ></div>
+            ))}
+          </div>
         </div>
       </body>
     </html>
