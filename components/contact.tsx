@@ -1,3 +1,5 @@
+import { Icons } from "@/lib/icons";
+
 function Contact() {
   return (
     <div className="container mx-auto md:px-8 my-[3rem]">
@@ -13,12 +15,14 @@ function Contact() {
           request or question, don’t hesitate to contact me
         </div>
         <div className="flex-1  flex items-end justify-end  w-full pr-18">
-          <div className="flex flex-col w-fit h-fit border border-textsecondary  p-6">
+          <div className="flex flex-col w-fit h-fit border border-textsecondary gap-4  p-6">
             <span className="text-white font-medium">Message me here</span>
-            <span className="text-textprimary font-medium">
+            <span className="text-textprimary font-medium flex gap-2">
+              <Icons.Discord />
               Message me here
             </span>
-            <span className="text-textprimary font-medium">
+            <span className="text-textprimary font-medium flex gap-2">
+              <Icons.Mail />
               Message me here
             </span>
           </div>
