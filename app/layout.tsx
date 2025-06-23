@@ -23,8 +23,8 @@ export default function RootLayout({
       <body
         className={` container mx-auto lg:flex flex-10 font-fira-code ${firaCode.variable}   antialiased`}
       >
-        <div className="flex-1 bg-[#282C33]   h-screen hidden lg:flex flex-col justify-between">
-          <div className="flex flex-col items-center justify-center gap-4">
+        <div className="relative flex-1 bg-[#282C33]   min-h-screen hidden lg:flex flex-col justify-between">
+          <div className="fixed top-0   ml-16  flex flex-col items-center justify-center gap-4">
             <div className="border-l border-[#ABB2BF] h-64"></div>
 
             <div className="flex flex-col gap-2">
@@ -34,6 +34,7 @@ export default function RootLayout({
               <Icons.Instagram />
             </div>
           </div>
+          <div className="h-[20rem]"></div>
           <div className="grid grid-cols-2 gap-4  place-items-center px-16 ">
             {[...Array(10).keys()].map((index) => (
               <div
@@ -45,11 +46,12 @@ export default function RootLayout({
           <div></div>
           <div></div>
         </div>
+
         <div className="flex-8 bg-[#282C33] ">
           <TopNav />
           {children}
         </div>
-        <div className="flex-1  bg-[#282C33]  h-screen hidden lg:flex flex-col justify-between  items-end">
+        <div className="flex-1  bg-[#282C33]  min-h-screen hidden lg:flex flex-col justify-between  items-end">
           <div></div>
           <div className="h-28 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
           <div></div>
