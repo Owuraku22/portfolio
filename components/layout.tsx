@@ -49,9 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             ))}
           </div>
           <div
-            className={` absolute top-[90rem]  left-0  h-28 w-19 border-r border-t border-b border-[#ABB2BF] ${
-              activeTab == "home " ? "block" : "hidden"
-            }`}
+            className={` absolute top-[43rem]  left-0  h-28 w-19 border-r border-t border-b border-[#ABB2BF]            }`}
           ></div>
 
           <div
@@ -80,9 +78,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             }`}
           ></div>
 
-          {activeTab == "home " && (
-            <div className=" absolute top-[90rem]  right-0  h-46 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
-          )}
+          <div className=" absolute top-[40rem]  right-0  h-46 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
+
           <div className="absolute bottom-[20rem] right-0   grid grid-cols-3 gap-4  place-items-center ">
             {[...Array(15).keys()].map((index) => (
               <div

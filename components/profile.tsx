@@ -1,6 +1,11 @@
+"use client";
+
+import { useActiveTab } from "@/store";
 import Image from "next/image";
+import Link from "next/link";
 
 function Profile() {
+  const { setActiveTab } = useActiveTab();
   return (
     <div className="container px-10 md:px-18 mx-auto flex flex-col md:flex-row gap-4 mt-[3rem] md:mt-[10rem] h-auto ">
       <div className="flex-1 flex flex-col gap-4 h-auto">
@@ -10,9 +15,16 @@ function Profile() {
         <p className="font-normal text-[16px] text-[#ABB2BF] mt-4">
           He crafts responsive websites where technologies meet creativity
         </p>
-        <div className="border text-white border-[#C778DD] py-2 px-4 w-fit">
+        <Link
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/contacts";
+          }}
+          href={"/contacts"}
+          className="border text-white border-[#C778DD] py-2 px-4 w-fit"
+        >
           Contact me !!
-        </div>
+        </Link>
       </div>
       <div className="flex-1 relative w-full  min-h-[280px] sm:min-h-[300px] lg:min-h-[300px]">
         <Image

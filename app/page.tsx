@@ -20,10 +20,10 @@ export default function Home() {
             - Dev Safo
           </div>
         </div>
-        <Projects />
-        <Skills />
-        <AboutMe />
-        <Contact />
+        <Projects set={true} limit={3} />
+        <Skills set={true} />
+        <AboutMe set={true} />
+        <Contact set={true} />
       </main>
     </div>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Skills() {
+function Skills({ set }: { set: boolean }) {
   const SkillsCard = () => {
     return (
       <div className="border border-textprimary h-fit max-w-[180px] md:w-auto">
@@ -16,11 +16,13 @@ function Skills() {
 
   return (
     <div className="container mx-auto md:px-8 my-[3rem]">
-      <div className="p-2  flex w-full items-center justify-center">
+      <div className="p-2 mt-12 mb-6 flex w-full items-center ">
         <h1 className="text-[32px] font-medium text-white mr-4">
           <span className="text-textsecondary">#</span>skills
         </h1>
-        <div className="border-b border-textsecondary w-full mr-8 md:mr-[10rem] lg:mr-[18rem]"></div>
+        {set && (
+          <div className="border-b border-textsecondary w-full mr-8 md:mr-[10rem] lg:mr-[18rem]"></div>
+        )}
       </div>
       <div className="flex flex-3  md:flex-row flex-col-reverse gap-8  h-auto w-full m-3">
         <div className="hidden md:flex flex-1 ">
