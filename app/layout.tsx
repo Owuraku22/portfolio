@@ -3,6 +3,8 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/topNav";
 import { Icons } from "@/lib/icons";
+import Footer from "@/components/footer";
+import Layout from "@/components/layout";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -21,57 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` container mx-auto lg:flex flex-10 font-fira-code ${firaCode.variable}   antialiased`}
+        className={`bg-[#282C33]   font-fira-code ${firaCode.variable}   antialiased`}
       >
-        <div className="relative flex-1 bg-[#282C33]   min-h-screen hidden lg:flex flex-col justify-between">
-          <div className="fixed top-0   ml-16  flex flex-col items-center justify-center gap-4">
-            <div className="border-l border-[#ABB2BF] h-64"></div>
-
-            <div className="flex flex-col gap-2">
-              <Icons.GitHub />
-              <Icons.LinkedIn />
-              <Icons.Twiter />
-              <Icons.Instagram />
-            </div>
-          </div>
-
-          <div className="absolute top-[45rem] left-0 right-0  grid grid-cols-2 gap-4  place-items-center px-16 ">
-            {[...Array(10).keys()].map((index) => (
-              <div
-                key={index}
-                className="h-1 w-1 bg-[#ABB2BF] rounded-full"
-              ></div>
-            ))}
-          </div>
-          <div className=" absolute top-[90rem]  left-0  h-28 w-19 border-r border-t border-b border-[#ABB2BF]"></div>
-          <div className="absolute bottom-10 left-0   grid grid-cols-3 gap-4  place-items-center ">
-            {[...Array(15).keys()].map((index) => (
-              <div
-                key={index}
-                className="h-1 w-1 bg-[#ABB2BF] rounded-full"
-              ></div>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex-8 bg-[#282C33] ">
-          <TopNav />
-          {children}
-        </div>
-        <div className="flex-1 relative bg-[#282C33]  min-h-screen hidden lg:flex flex-col justify-between  items-end">
-          <div className=" absolute top-[45rem]  right-0  h-28 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
-
-          <div className=" absolute top-[90rem]  right-0  h-46 w-20 border-l border-t border-b border-[#ABB2BF]"></div>
-
-          <div className="absolute bottom-[20rem] right-0   grid grid-cols-3 gap-4  place-items-center ">
-            {[...Array(15).keys()].map((index) => (
-              <div
-                key={index}
-                className="h-1 w-1 bg-[#ABB2BF] rounded-full"
-              ></div>
-            ))}
-          </div>
-        </div>
+        <Layout children={children} />
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ function Profile() {
           alt="profile"
           height={100}
           width={100}
-          className="absolute w-100 h-100  md:w-100 md:h-100 -bottom-10 sm:-bottom-15 xl:-bottom-5 z-10 object-contain "
+          className="absolute w-100 h-100  md:w-100 md:h-100 -bottom-12 sm:-bottom-15 xl:-bottom-5 z-10 object-contain "
         />
         <Image
           src={"/squares.png"}
@@ -29,7 +29,7 @@ function Profile() {
           width={100}
           className="absolute top-10 w-30 h-30 object-contain"
         />
-        <div className="absolute bottom-0 flex items-center gap-2 bg-[#282C33] px-4 z-20 border w-[330px] sm:w-[380px] md:w-[300px] xl:w-[380px]">
+        <div className="absolute bottom-0 flex items-center gap-2 bg-[#282C33] px-4 z-20 border w-[320px] sm:w-[380px] md:w-[300px] xl:w-[380px]">
           <div className="h-3 w-3 bg-[#C778DD]"></div>
           <p className="text-[16px] font-medium text-textprimary">
             Currently working on{" "}

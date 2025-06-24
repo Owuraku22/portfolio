@@ -3,11 +3,11 @@ import Image from "next/image";
 function Skills() {
   const SkillsCard = () => {
     return (
-      <div className="border border-textprimary h-fit max-w-[190px] md:w-auto">
+      <div className="border border-textprimary h-fit max-w-[180px] md:w-auto">
         <div className="border-b border-textprimary p-2 text-white font-semibold">
           Languages
         </div>
-        <p className="text-textprimary p-2 max-w-50 text-wrap leading-10">
+        <p className="text-textprimary p-2 max-w-40 md:max-w-50 text-wrap leading-10">
           HTML, CSS, JavaScript, Python
         </p>
       </div>

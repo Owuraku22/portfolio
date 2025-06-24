@@ -3,7 +3,7 @@ import Image from "next/image";
 function ProjectCard() {
   return (
     <div className="border  border-textprimary max-w-[400px] ">
-      <div className="h-70 w-full">
+      <div className="min-h-70 w-full">
         <Image
           src={"/Rectangle 22.svg"}
           alt="project 1"
