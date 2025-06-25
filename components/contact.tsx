@@ -21,7 +21,7 @@ function Contact({ set }: { set: boolean }) {
             <span className="text-white font-normal text-[15px] md:text-[16px]">
               Message me here
             </span>
-            <a  href="" className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
+            <a  href="https://www.instagram.com/african_god_/" className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
               <Icons.Instagram />
               Message me on Instagram
             </a>
