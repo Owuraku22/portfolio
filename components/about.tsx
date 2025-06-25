@@ -17,17 +17,16 @@ function AboutMe({ set }: { set: boolean }) {
       )}
       <div className="relative flex flex-col-reverse md:flex-row flex-2 px-4  ">
         <div className="flex flex-1 flex-col gap-4 text-[16px] font-normal text-textprimary">
-          <span>Hello, i’m Elias!</span>
+          <span>Hello, i’m Owura Kwaku Safo!</span>
           <span>
-            I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
-            develop responsive websites from scratch and raise them into modern
-            user-friendly web experiences.{" "}
+            Backend Developer with 2+ years of experience building APIs using Laravel, 
+            Golang, and Python. Quick to learn and apply new technologies, with a strong focus on performance, usability,
+            and maintainability. Notable work includes a supporting-ticketing-system, an e-commerce platform, and admin dashboards.
           </span>
           <span>
-            Transforming my creativity and knowledge into a websites has been my
-            passion for over a year. I have been helping various clients to
-            establish their presence online. I always strive to learn about the
-            newest technologies and frameworks.
+            I’m committed to continuous learning and staying updated with new technologies to expand my skill set.
+            I’m eager to collaborate on exciting projects with other great minds and take on new challenges. 
+            If you have questions or simply want to connect, don’t hesitate to reach out. I’m looking forward to meeting you!
           </span>
           {set == true && (
             <Link

@@ -21,14 +21,18 @@ function Contact({ set }: { set: boolean }) {
             <span className="text-white font-normal text-[15px] md:text-[16px]">
               Message me here
             </span>
-            <span className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
-              <Icons.Discord />
-              Message me here
-            </span>
-            <span className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
+            <a  href="" className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
+              <Icons.Instagram />
+              Message me on Instagram
+            </a>
+            <a  href="mailto:owurakwaku758@gmail.com" className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
               <Icons.Mail />
-              Message me here
-            </span>
+              Send me Mail
+            </a>
+            <a href= "https://api.whatsapp.com/send?phone=233500081395" className="text-textprimary font-normal text-[14px] md:text-[16px] flex gap-2">
+              <Icons.WhatsApp />
+              Message me on WhatsApp
+            </a>
           </div>
         </div>
       </div>

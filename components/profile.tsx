@@ -10,7 +10,7 @@ function Profile() {
     <div className="container px-10 md:px-18 mx-auto flex flex-col md:flex-row gap-4 mt-[3rem] md:mt-[10rem] h-auto ">
       <div className="flex-1 flex flex-col gap-4 h-auto">
         <div className="font-semibold text-[32px] text-white">
-          Safo is a <span className="text-[#C778DD]">backend developer</span>
+          Owura kwaku Safo is a <span className="text-[#C778DD]">Software developer</span>
         </div>
         <p className="font-normal text-[16px] text-[#ABB2BF] mt-4">
           He crafts responsive websites where technologies meet creativity
@@ -23,7 +23,7 @@ function Profile() {
           href={"/contacts"}
           className="border text-white border-[#C778DD] py-2 px-4 w-fit"
         >
-          Contact me !!
+          Contact me 
         </Link>
       </div>
       <div className="flex-1 relative w-full  min-h-[280px] sm:min-h-[300px] lg:min-h-[300px]">

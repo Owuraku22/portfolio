@@ -1,14 +1,17 @@
 import Image from "next/image";
 
 function Skills({ set }: { set: boolean }) {
-  const SkillsCard = () => {
+
+ 
+
+  const SkillsCard = ({Stack, description}:{Stack:string, description:string}) => {
     return (
       <div className="border border-textprimary h-fit max-w-[180px] md:w-auto">
         <div className="border-b border-textprimary p-2 text-white font-semibold">
-          Languages
+          {Stack}
         </div>
         <p className="text-textprimary p-2 max-w-40 md:max-w-50 text-wrap leading-10">
-          HTML, CSS, JavaScript, Python
+       {description}
         </p>
       </div>
     );
@@ -62,14 +65,15 @@ function Skills({ set }: { set: boolean }) {
         </div>
         <div className="flex flex-2 md:ml-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <SkillsCard />
-            <SkillsCard />
-            <SkillsCard />
+            <SkillsCard Stack="Languages" description="PHP, Python, Dart, Javascript"/>
+            <SkillsCard Stack="Frameworks" description="React, Laravel, Vue, Flutter, Adonis"/>
+            <SkillsCard Stack="Databases" description="MySQL, MongoDB, PostgreSQL"/>
+            <SkillsCard Stack="Others" description="Html, Css, JavaScript, VB.net"/>
             <div className="col-start-2">
-              <SkillsCard />
+              <SkillsCard Stack="Tools" description="Git, Github"/>
             </div>
             <div className="col-start-2 md:col-start-3">
-              <SkillsCard />
+              <SkillsCard Stack="Cloud" description="Hostinger, Laravel cloud, Google Cloud"/>
             </div>
           </div>
         </div>

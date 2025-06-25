@@ -21,16 +21,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="border-l border-[#ABB2BF] h-64"></div>
 
             <div className="flex flex-col gap-2">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Owuraku22" target="_blank" rel="noopener noreferrer">
                 <Icons.GitHub className="h-6 w-6 hover:text-textprimary" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/owura-kwaku-safo-8277b7336/" target="_blank" rel="noopener noreferrer">
                 <Icons.LinkedIn className="h-6 w-6 hover:text-textprimary" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/AfriG_1" target="_blank" rel="noopener noreferrer">
                 <Icons.Twiter className="h-6 w-6 hover:text-textprimary" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/african_god_/" target="_blank" rel="noopener noreferrer">
                 <Icons.Instagram className="h-6 w-6 hover:text-textprimary" />
               </a>
             </div>

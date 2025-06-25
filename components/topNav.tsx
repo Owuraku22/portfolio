@@ -14,7 +14,7 @@ export default function TopNav() {
   const [menu, setMenu] = useState<boolean>(false);
   const navLinks = [
     { id: 1, name: "home", links: "/" },
-    { id: 2, name: "works", links: "/work" },
+    { id: 2, name: "projects", links: "/work" },
     { id: 3, name: "about-me", links: "/about" },
     { id: 4, name: "contacts", links: "/contacts" },
   ];
@@ -51,7 +51,7 @@ export default function TopNav() {
           href={"/"}
           className="text-white font-bold text-[16px] flex items-center gap-1"
         >
-          <Image src={"/logo.png"} alt="logo" width={60} height={60} /> Safo
+          <Image src={"/logo.png"} alt="logo" width={60} height={60} /> Owura Kwaku Safo
         </Link>
 
         <div className="space-x-8 hidden md:flex  ">

@@ -14,10 +14,10 @@ export default function Home() {
         <Profile />
         <div className="mx-auto max-w-[550px] flex flex-col justify-end items-end mt-[7rem]">
           <div className=" text-white font-medium text-[18px]  md:text-[24px] border border-textprimary p-6">
-            With great power comes great electricity bill
+            With great power comes great Great Responsibility
           </div>
           <div className=" text-white font-medium text-[14px] md:text-[20px] border border-textprimary p-4">
-            - Dev Safo
+            - By ME
           </div>
         </div>
         <Projects set={true} limit={3} />
