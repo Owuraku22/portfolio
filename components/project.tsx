@@ -5,7 +5,8 @@ import ProjectCard from "./project-card";
 
 const dummyProjects = [
   {
-    imageSrc: "https://res.cloudinary.com/dfdz4coc9/image/upload/v1750788534/Screenshot_from_2025-06-24_18-00-53_g2aqpm.png",
+    imageSrc:
+      "https://res.cloudinary.com/dfdz4coc9/image/upload/v1750788534/Screenshot_from_2025-06-24_18-00-53_g2aqpm.png",
     imageAlt: "Portfolio",
     techStack: "Vue, TypeScript, TailwindCSS",
     title: "Portfolio Website",
@@ -13,9 +14,11 @@ const dummyProjects = [
       "A personal portfolio website to showcase my projects and skills.",
     liveLabel: "View Live",
     link: "https://owuraku.vercel.app/",
+    gitHubLink: "https://github.com/Owuraku22/portfolio",
   },
   {
-    imageSrc: "https://res.cloudinary.com/dfdz4coc9/image/upload/v1745171991/dashboard.png",
+    imageSrc:
+      "https://res.cloudinary.com/dfdz4coc9/image/upload/v1745171991/dashboard.png",
     imageAlt: "ShaqApp Admin Dashboard",
     techStack: "Laravel, React, MySQL",
     title: "Admin Dashboard",
@@ -23,9 +26,11 @@ const dummyProjects = [
       "A modern admin dashboard offering advanced data visualization and user management tools.",
     link: "",
     liveLabel: "",
+    gitHubLink: "",
   },
   {
-    imageSrc: "https://res.cloudinary.com/dfdz4coc9/image/upload/v1748008142/Screenshot_from_2025-05-23_13-47-08_ysmars.png",
+    imageSrc:
+      "https://res.cloudinary.com/dfdz4coc9/image/upload/v1748008142/Screenshot_from_2025-05-23_13-47-08_ysmars.png",
     imageAlt: "ShaqDidi",
     techStack: "Laravel, React, MySQL",
     title: "Shaqdidi",
@@ -33,15 +38,19 @@ const dummyProjects = [
       "A web application that allows users to send requests and assign errands to personnel.",
     link: "https://shaqdidi-web.vercel.app/",
     liveLabel: "View Project",
+    gitHubLink: "",
   },
   {
-    imageSrc: "https://res.cloudinary.com/dfdz4coc9/image/upload/v1745172016/shaqapp.png",
+    imageSrc:
+      "https://res.cloudinary.com/dfdz4coc9/image/upload/v1745172016/shaqapp.png",
     imageAlt: "ShaqApp",
     techStack: "Angular, Express, PostgreSQL",
     title: "ShaqApp",
-    description: "A robust e-commerce platform with product management, shopping cart, and secure payment processing.",
+    description:
+      "A robust e-commerce platform with product management, shopping cart, and secure payment processing.",
     link: "https://shaqapp.com/",
     liveLabel: "Visit Website",
+    gitHubLink: "",
   },
   // {
   //   imageSrc: "/Rectangle 22.svg",
@@ -52,6 +61,7 @@ const dummyProjects = [
   //     "A real-time chat application with channels and private messaging.",
   //   link: "#",
   //   liveLabel: "Open App",
+  //   gitHubLink: "#",
   // },
   // {
   //   imageSrc: "/Rectangle 22.svg",
@@ -61,6 +71,7 @@ const dummyProjects = [
   //   description: "A mobile app to track workouts, nutrition, and progress.",
   //   link: "#",
   //   liveLabel: "Download",
+  //   gitHubLink: "#",
   // },
 ];
 
